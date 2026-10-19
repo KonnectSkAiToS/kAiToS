@@ -1,0 +1,6 @@
+{
+  "name": "kÅiTøS - AI, IT & Operating Systems",
+  "description": "Enterprise statistics, software engineering, cloud systems, autonomous AI agents, and managed IT services by kÅiTøS (kaitos.in).",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
