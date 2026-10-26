@@ -1,4 +1,9 @@
 import { ServiceItem, CaseStudy, BlogPost, TechStackCategory, MetricItem } from '../types';
+import cloudSystemsImg from '../assets/images/kaitos_cloud_systems_1791994195916.jpg';
+import heroDatacenterImg from '../assets/images/kaitos_hero_datacenter_ai_1791994196980.jpg';
+import officeBengaluruImg from '../assets/images/kaitos_office_bengaluru_1791994197142.jpg';
+import autonomousOsImg from '../assets/images/kaitos_ai_autonomous_os_1791994196001.jpg';
+import fintechImg from '../assets/images/kaitos_case_study_fintech_1791994198089.jpg';
 
 export const COMPANY_INFO = {
   name: 'kÅiTøS',
@@ -159,7 +164,7 @@ export const SERVICES: ServiceItem[] = [
       { label: 'Throughput', value: '10x Increase' },
       { label: 'Code Coverage', value: '98.4%' }
     ],
-    imagePath: '/src/assets/images/kaitos_cloud_systems_1791994195916.jpg'
+    imagePath: cloudSystemsImg
   },
   {
     id: 'cloud-devops',
@@ -178,7 +183,7 @@ export const SERVICES: ServiceItem[] = [
       { label: 'Cloud Spend Cut', value: '44% Average' },
       { label: 'Deployment Velocity', value: '6x Faster' }
     ],
-    imagePath: '/src/assets/images/kaitos_hero_datacenter_ai_1791994196980.jpg'
+    imagePath: heroDatacenterImg
   },
   {
     id: 'strategic-consulting',
@@ -197,7 +202,7 @@ export const SERVICES: ServiceItem[] = [
       { label: 'Audit Payback', value: '< 90 Days' },
       { label: 'Tech Debt Reduced', value: '65%' }
     ],
-    imagePath: '/src/assets/images/kaitos_office_bengaluru_1791994197142.jpg'
+    imagePath: officeBengaluruImg
   },
   {
     id: 'managed-it',
@@ -216,7 +221,7 @@ export const SERVICES: ServiceItem[] = [
       { label: 'P1 Response Time', value: '< 8 Minutes' },
       { label: 'Uptime Maintained', value: '99.998%' }
     ],
-    imagePath: '/src/assets/images/kaitos_ai_autonomous_os_1791994196001.jpg'
+    imagePath: autonomousOsImg
   }
 ];
 
@@ -235,7 +240,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { metric: '99.995%', value: 'Telemetry Ingest SLA', context: 'Over 850 million sensor packets daily' }
     ],
     techStack: ['Rust', 'Apache Kafka', 'ClickHouse', 'Kubernetes', 'FastAPI', 'MapLibre GL'],
-    imagePath: '/src/assets/images/kaitos_cloud_systems_1791994195916.jpg'
+    imagePath: cloudSystemsImg
   },
   {
     id: 'fintech-settlement',
@@ -251,7 +256,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { metric: '99.999%', value: 'Engine Availability', context: 'Zero unscheduled downtime over 18 months' }
     ],
     techStack: ['Go', 'PostgreSQL', 'Redis Cluster', 'eBPF', 'Terraform', 'Vault'],
-    imagePath: '/src/assets/images/kaitos_case_study_fintech_1791994198089.jpg'
+    imagePath: fintechImg
   },
   {
     id: 'healthcare-federated-ai',
@@ -267,7 +272,7 @@ export const CASE_STUDIES: CaseStudy[] = [
       { metric: '3.1x', value: 'Radiologist Review Speed', context: 'Automated pre-triage anomaly annotation' }
     ],
     techStack: ['PyTorch', 'TensorRT', 'Docker', 'WireGuard', 'WebAssembly', 'TypeScript'],
-    imagePath: '/src/assets/images/kaitos_ai_autonomous_os_1791994196001.jpg'
+    imagePath: autonomousOsImg
   },
   {
     id: 'ecommerce-multicloud',
@@ -278,12 +283,12 @@ export const CASE_STUDIES: CaseStudy[] = [
     challenge: 'Uncontrolled AWS cloud bills reaching $420,000/month with single-region vulnerability during Black Friday peak traffic surges and unmanageable database connection pools.',
     solution: 'Migrated compute workloads to a multi-cloud hybrid architecture spanning AWS and bare-metal nodes, implemented automated spot instance harvesting, and deployed a global Cloudflare edge caching layer.',
     results: [
-      { metric: '65%', value: 'Monthly Cloud Spend Cut', context: 'Saving $2.7M annually while doubling capacity' },
+      { metric: '65%', value: 'Monthly Cloud spend cut', context: 'Saving $2.7M annually while doubling capacity' },
       { metric: '0ms', value: 'Downtime During Cyber Week', context: 'Handled 4.2x previous peak traffic smoothly' },
       { metric: '82ms', value: 'Global Page Render Time', context: 'Improved Core Web Vitals to 99th percentile' }
     ],
     techStack: ['AWS EKS', 'Cloudflare Workers', 'Terraform', 'Next.js', 'PostgreSQL', 'Grafana'],
-    imagePath: '/src/assets/images/kaitos_hero_datacenter_ai_1791994196980.jpg'
+    imagePath: heroDatacenterImg
   }
 ];
 

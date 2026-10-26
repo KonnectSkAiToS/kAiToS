@@ -3,6 +3,7 @@ import { COMPANY_INFO, CORE_METRICS } from '../data/content';
 import { ActiveSection } from '../types';
 import { useLocationCurrency, CONTACT_PHONES } from '../context/LocationCurrencyContext';
 import { KaitosLogo, KaitosWordmark } from './KaitosLogo';
+import heroDatacenterImg from '../assets/images/kaitos_hero_datacenter_ai_1791994196980.jpg';
 import { ArrowRight, Cpu, Layers, BarChart3, ShieldCheck, Phone, Globe, Activity, TrendingUp } from 'lucide-react';
 
 interface HeroProps {
@@ -115,9 +116,17 @@ export const Hero: React.FC<HeroProps> = ({ onNavigate }) => {
           <div className="lg:col-span-5 flex flex-col">
             <div className="relative rounded-2xl overflow-hidden border border-slate-800 bg-slate-900/60 shadow-2xl h-full min-h-[380px] flex flex-col justify-between group">
               <img
-                src="/src/assets/images/kaitos_hero_datacenter_ai_1791994196980.jpg"
+                src={heroDatacenterImg}
                 alt="kÅiTøS mission-critical enterprise AI and data center infrastructure"
+                loading="eager"
+                decoding="async"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src !== '/assets/images/kaitos_hero_datacenter_ai_1791994196980.jpg') {
+                    target.src = '/assets/images/kaitos_hero_datacenter_ai_1791994196980.jpg';
+                  }
+                }}
                 className="absolute inset-0 w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
               />
               <div className="absolute inset-0 bg-gradient-to-t from-[#090D16] via-[#090D16]/50 to-transparent" />

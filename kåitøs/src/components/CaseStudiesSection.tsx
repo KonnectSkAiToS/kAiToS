@@ -65,7 +65,17 @@ export const CaseStudiesSection: React.FC<CaseStudiesSectionProps> = ({ onNaviga
                 <img
                   src={study.imagePath}
                   alt={study.title}
+                  loading="lazy"
+                  decoding="async"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    const fileName = study.imagePath.split('/').pop() || '';
+                    const fallback = `/assets/images/${fileName}`;
+                    if (target.src !== fallback && fileName) {
+                      target.src = fallback;
+                    }
+                  }}
                   className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
                 />
                 <div className="absolute inset-0 bg-gradient-to-t from-slate-950 via-slate-950/40 to-transparent" />
